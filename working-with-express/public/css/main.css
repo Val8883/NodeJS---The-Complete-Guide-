@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+.main-header {
+  width: 100%;
+  height: 55px;
+  padding: 0 2rem;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-header__nav {
+  height: 100%;
+}
+
+.main-header__item-list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-header__item {
+  margin-left: 1rem;
+}
+
+.main-header__item a {
+  color: paleturquoise;
+}
+.main-header__item a:hover,
+.main-header__item a.active {
+  color: whitesmoke;
+}
+
+.product-form__control label,
+.product-form__control input {
+  display: block;
+  width: 100%;
+}
+
+.product-form {
+  width: 30rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+.product-form__control label {
+  font-size: 13px;
+}
+
+.product-form__control input {
+  border: 1px solid #000428;
+  border-radius: 2px;
+  padding: 3px;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  background-color: #004e92;
+  color: whitesmoke;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1767ad;
+}
