@@ -18,6 +18,7 @@ router.get('/', (req, res, next) => {
     hasProducts: products.length > 0,
     isActiveShop: true,
     productCSS: true,
+    formsCSS: false,
   });
 });
 

@@ -2,21 +2,13 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const expressHbs = require('express-handlebars');
 
 const app = express();
 
 // register the template engine
-app.engine(
-  'hbs',
-  expressHbs({
-    extname: 'hbs',
-    layoutDir: 'views/layout',
-    defaultLayout: 'main',
-  })
-);
+
 // setup default view engine configuration
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 // path to the folder with tamplate files
 app.set('views', 'views');
 
