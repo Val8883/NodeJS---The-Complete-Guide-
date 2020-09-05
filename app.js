@@ -7,10 +7,17 @@ const expressHbs = require('express-handlebars');
 const app = express();
 
 // register the template engine
-app.engine('hanldebars', expressHbs());
+app.engine(
+  'hbs',
+  expressHbs({
+    extname: 'hbs',
+    layoutDir: 'views/layout',
+    defaultLayout: 'main',
+  })
+);
 // setup default view engine configuration
-app.set('view engine', 'handlebars');
-// path to the folder with tamplate files (.pug)
+app.set('view engine', 'hbs');
+// path to the folder with tamplate files
 app.set('views', 'views');
 
 const adminData = require('./routes/admin');
