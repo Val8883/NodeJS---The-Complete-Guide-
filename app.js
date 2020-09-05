@@ -9,7 +9,7 @@ const app = express();
 // register the template engine
 app.engine('hanldebars', expressHbs());
 // setup default view engine configuration
-app.set('view engine', 'pug');
+app.set('view engine', 'handlebars');
 // path to the folder with tamplate files (.pug)
 app.set('views', 'views');
 
